@@ -1,16 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="BlackStone Construction and Design LLC, based in Charlotte, NC, specializes in expert bathroom remodels, kitchen backsplashes, tile installation, and handyman services.">
+    <meta name="description"
+        content="BlackStone Construction and Design LLC, based in Charlotte, NC, specializes in expert bathroom remodels, kitchen backsplashes, tile installation, and handyman services.">
     <title>BlackStone Construction & Design LLC - Charlotte Remodeling Specialists</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Glide.js Carousel CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css">
+
+    <!-- SEO Meta Tags -->
+    <meta name="keywords"
+        content="bathroom remodeling Charlotte NC, kitchen remodeling Charlotte, kitchen backsplash installation, tile flooring, bathroom renovation contractor, kitchen renovation, tile installation, handyman services, BlackStone Construction, home remodeling Concord NC, bathroom remodel Huntersville, kitchen remodel Mooresville NC, Matthews NC contractor, Gastonia bathroom remodel, Rock Hill SC kitchen remodel, Fort Mill SC, Indian Trail NC, Mint Hill NC, Cornelius NC, Davidson NC, Kannapolis NC, Salisbury NC, Statesville NC, Hickory NC, Monroe NC, Waxhaw NC, Belmont NC, Mount Holly NC, Stanley NC, Denver NC, Harrisburg NC, Pineville NC, Lake Norman, Ballantyne Charlotte">
+    <meta name="author" content="BlackStone Construction and Design LLC">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://blackstoneclt.com/">
+
+    <!-- Favicon and Theme -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <meta name="theme-color" content="#2B3A42">
 
 
     <style>
@@ -31,8 +45,10 @@
 
         /* ---=== 1. Global Resets & Base Styles ===--- */
         :root {
-            --primary-color: #2B3A42; /* Dark Slate Blue */
-            --secondary-color: #C6A056; /* Warm Gold */
+            --primary-color: #2B3A42;
+            /* Dark Slate Blue */
+            --secondary-color: #C6A056;
+            /* Warm Gold */
             --text-color: #333333;
             --light-text-color: #FFFFFF;
             --light-bg-color: #F8F9FA;
@@ -61,6 +77,30 @@
             background-color: var(--light-text-color);
         }
 
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--light-bg-color);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--secondary-color);
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #b08f4d;
+        }
+
+        /* Firefox scrollbar */
+        html {
+            scrollbar-width: thin;
+            scrollbar-color: var(--secondary-color) var(--light-bg-color);
+        }
+
         img {
             max-width: 100%;
             height: auto;
@@ -78,7 +118,10 @@
             color: var(--primary-color);
         }
 
-        h1, h2, h3, h4 {
+        h1,
+        h2,
+        h3,
+        h4 {
             font-family: var(--font-heading);
             color: var(--primary-color);
             margin-bottom: 1.25rem;
@@ -87,9 +130,17 @@
             text-transform: uppercase;
         }
 
-        h1 { font-size: clamp(2.5rem, 5vw, 3.5rem); }
-        h2 { font-size: clamp(2rem, 4vw, 2.5rem); }
-        h3 { font-size: 1.5rem; }
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+        }
+
+        h2 {
+            font-size: clamp(2rem, 4vw, 2.5rem);
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
 
         p {
             margin-bottom: 1rem;
@@ -109,12 +160,12 @@
         .section {
             padding: clamp(60px, 8vw, 100px) 0;
         }
-        
+
         .section-title {
             text-align: center;
             margin-bottom: 50px;
         }
-        
+
         .section-title p {
             max-width: 700px;
             margin-left: auto;
@@ -129,10 +180,13 @@
             background-color: var(--primary-color);
             color: var(--light-text-color);
         }
-        .bg-dark h2, .bg-dark h3, .bg-dark p {
+
+        .bg-dark h2,
+        .bg-dark h3,
+        .bg-dark p {
             color: var(--light-text-color);
         }
-        
+
         .text-center {
             text-align: center;
         }
@@ -153,18 +207,20 @@
             color: var(--light-text-color);
             border-color: var(--secondary-color);
         }
+
         .cta-button:hover {
-            background-color: #b08f4d; /* Darker gold */
+            background-color: #b08f4d;
+            /* Darker gold */
             border-color: #b08f4d;
             color: var(--light-text-color);
             transform: translateY(-2px);
         }
-        
+
         /* ---=== 3. Header & Navigation ===--- */
         .site-header {
             background-color: var(--light-text-color);
             padding: 15px 0;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.07);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07);
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -184,6 +240,7 @@
             color: var(--primary-color);
             text-transform: uppercase;
         }
+
         .logo:hover {
             color: var(--primary-color);
         }
@@ -207,6 +264,7 @@
             font-size: 0.9rem;
             letter-spacing: 0.5px;
         }
+
         .main-nav .nav-menu a::after {
             content: '';
             position: absolute;
@@ -217,6 +275,7 @@
             background-color: var(--secondary-color);
             transition: width 0.3s ease;
         }
+
         .main-nav .nav-menu a:hover::after,
         .main-nav .nav-menu a.active::after {
             width: 100%;
@@ -229,9 +288,11 @@
             border-radius: var(--border-radius);
             transition: background-color 0.3s ease;
         }
+
         .nav-cta:hover {
             background-color: #b08f4d;
         }
+
         .nav-cta::after {
             display: none !important;
         }
@@ -242,32 +303,33 @@
             border: none;
             cursor: pointer;
             padding: 10px;
-            z-index: 1001;
-        }
-        .hamburger-box {
-            width: 30px;
-            height: 24px;
-            display: inline-block;
             position: relative;
+            z-index: 1001;
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            transition: color 0.3s ease;
         }
-        .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-            width: 100%;
-            height: 3px;
-            background-color: var(--primary-color);
-            border-radius: var(--border-radius);
-            position: absolute;
-            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+
+        .hamburger:hover {
+            color: var(--secondary-color);
         }
-        .hamburger-inner { top: 50%; transform: translateY(-50%); }
-        .hamburger-inner::before { content: ''; top: -10px; }
-        .hamburger-inner::after { content: ''; bottom: -10px; }
-        .hamburger.is-active .hamburger-inner { background-color: transparent; }
-        .hamburger.is-active .hamburger-inner::before { transform: translateY(10px) rotate(45deg); }
-        .hamburger.is-active .hamburger-inner::after { transform: translateY(-10px) rotate(-45deg); }
-        
+
+        .hamburger .fa-times {
+            display: none;
+        }
+
+        .hamburger.is-active .fa-bars {
+            display: none;
+        }
+
+        .hamburger.is-active .fa-times {
+            display: inline-block;
+            color: var(--light-text-color);
+        }
+
         /* ---=== 4. Hero Section ===--- */
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
             color: var(--light-text-color);
             padding: clamp(100px, 15vw, 200px) 0;
             text-align: center;
@@ -275,19 +337,22 @@
             align-items: center;
             justify-content: center;
         }
+
         .hero-content {
             max-width: 800px;
         }
+
         .hero h1 {
             color: var(--light-text-color);
             margin-bottom: 1rem;
         }
+
         .hero p {
             font-size: 1.25rem;
             margin-bottom: 2rem;
             font-family: var(--font-body);
         }
-        
+
         /* ---=== 5. Generic Grid Layout --- */
         .grid-layout {
             display: grid;
@@ -295,11 +360,13 @@
             gap: 50px;
             align-items: center;
         }
+
         @media (min-width: 768px) {
             .grid-layout {
                 grid-template-columns: repeat(2, 1fr);
             }
         }
+
         .grid-image img {
             border-radius: var(--border-radius);
             box-shadow: var(--box-shadow);
@@ -312,6 +379,7 @@
             gap: 30px;
             margin-top: 20px;
         }
+
         .service-item {
             background-color: var(--light-text-color);
             padding: 30px;
@@ -320,15 +388,18 @@
             text-align: center;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
+
         .service-item:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
         }
+
         .service-item .service-icon {
             font-size: 3rem;
             color: var(--secondary-color);
             margin-bottom: 20px;
         }
+
         .service-item h3 {
             color: var(--primary-color);
         }
@@ -338,6 +409,7 @@
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 25px;
         }
+
         .portfolio-item {
             position: relative;
             overflow: hidden;
@@ -345,14 +417,17 @@
             box-shadow: var(--box-shadow);
             cursor: pointer;
         }
+
         .portfolio-item img {
             width: 100%;
             height: 280px;
             transition: transform 0.4s ease;
         }
+
         .portfolio-item:hover img {
             transform: scale(1.1);
         }
+
         .portfolio-overlay {
             position: absolute;
             bottom: 0;
@@ -364,30 +439,35 @@
             transform: translateY(100%);
             transition: transform 0.4s ease;
         }
+
         .portfolio-item:hover .portfolio-overlay {
             transform: translateY(0);
         }
+
         .portfolio-overlay h3 {
             color: var(--secondary-color);
             margin-bottom: 5px;
         }
+
         .portfolio-overlay p {
             margin: 0;
             font-size: 0.9rem;
         }
-        
+
         /* ---=== 7. Transformations Section ===--- */
         .transformations-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 40px;
         }
+
         .transformation-item h3 {
             text-align: center;
             margin-top: 20px;
             color: var(--primary-color);
             font-size: 1.2rem;
         }
+
         .transformation-image-container {
             position: relative;
             width: 100%;
@@ -396,6 +476,7 @@
             box-shadow: var(--box-shadow);
             aspect-ratio: 4 / 3;
         }
+
         .transformation-image {
             position: absolute;
             top: 0;
@@ -405,14 +486,16 @@
             object-fit: cover;
             transition: opacity 0.8s ease-in-out;
         }
+
         .after-image {
             opacity: 0;
         }
+
         .transformation-label {
             position: absolute;
             top: 15px;
             padding: 5px 15px;
-            background-color: rgba(0,0,0,0.6);
+            background-color: rgba(0, 0, 0, 0.6);
             color: white;
             font-family: var(--font-heading);
             font-size: 0.9rem;
@@ -422,26 +505,31 @@
             transition: opacity 0.8s ease-in-out;
             z-index: 2;
         }
+
         .before-label {
             left: 15px;
         }
+
         .after-label {
             right: 15px;
             opacity: 0;
         }
+
         .transformation-image-container.is-showing-after .before-image,
         .transformation-image-container.is-showing-after .before-label {
             opacity: 0;
         }
+
         .transformation-image-container.is-showing-after .after-image,
         .transformation-image-container.is-showing-after .after-label {
             opacity: 1;
         }
-        
+
         /* ---=== 8. Reviews Section & Carousel ===--- */
         #reviews .glide__slide {
             padding: 10px 0;
         }
+
         .review-card {
             background-color: var(--light-text-color);
             padding: 30px;
@@ -453,6 +541,7 @@
             height: 100%;
             min-height: 280px;
         }
+
         .review-card .review-text {
             font-style: italic;
             margin-bottom: auto;
@@ -460,6 +549,7 @@
             color: #555;
             flex-grow: 1;
         }
+
         .review-card .review-author {
             font-style: normal;
             font-weight: bold;
@@ -467,6 +557,7 @@
             color: var(--primary-color);
             margin-top: 15px;
         }
+
         .review-card .review-source a {
             text-align: right;
             font-size: 0.9em;
@@ -474,9 +565,11 @@
             display: inline-block;
             transition: color 0.3s ease;
         }
-         .review-card .review-source a:hover {
+
+        .review-card .review-source a:hover {
             color: var(--secondary-color);
         }
+
         .review-card .review-source i {
             margin-right: 5px;
             color: var(--secondary-color);
@@ -487,19 +580,24 @@
             font-weight: bold;
             color: var(--primary-color);
         }
-        .rating-summary .fa-star, .rating-summary .fa-star-half-alt {
+
+        .rating-summary .fa-star,
+        .rating-summary .fa-star-half-alt {
             color: #ffc107;
         }
+
         .google-review-btn {
             margin-top: 40px;
             background-color: #4285F4;
             color: white !important;
             border-color: #4285F4;
         }
+
         .google-review-btn:hover {
             background-color: #357ae8;
             border-color: #357ae8;
         }
+
         .google-review-btn i {
             margin-right: 8px;
         }
@@ -507,6 +605,7 @@
         .glide__arrows {
             margin-top: 30px;
         }
+
         .glide__arrow {
             position: absolute;
             display: block;
@@ -523,22 +622,31 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
         }
+
         .glide__arrow:hover {
             background-color: var(--secondary-color);
             border-color: var(--secondary-color);
         }
+
         .glide__arrow--left {
             left: -20px;
         }
+
         .glide__arrow--right {
             right: -20px;
         }
+
         @media (max-width: 1240px) {
-            .glide__arrow--left { left: 5px; }
-            .glide__arrow--right { right: 5px; }
+            .glide__arrow--left {
+                left: 5px;
+            }
+
+            .glide__arrow--right {
+                right: 5px;
+            }
         }
 
         /* ---=== 9. About Section is now the grid-layout section --- */
@@ -551,9 +659,11 @@
             text-align: center;
             box-shadow: var(--box-shadow);
         }
+
         .contact-cta-box h2 {
             font-size: clamp(1.8rem, 4vw, 2.2rem);
         }
+
         .contact-cta-box .email-link {
             font-family: var(--font-body);
             font-size: clamp(1.2rem, 3vw, 1.8rem);
@@ -565,6 +675,7 @@
             border: 2px solid var(--border-color);
             border-radius: var(--border-radius);
         }
+
         .contact-cta-box .email-link:hover {
             background-color: var(--light-text-color);
             border-color: var(--primary-color);
@@ -576,80 +687,145 @@
             color: rgba(255, 255, 255, 0.7);
             padding: 60px 0 0;
         }
+
         .site-footer h4 {
             color: var(--secondary-color);
             margin-bottom: 20px;
             font-size: 1rem;
         }
+
         .site-footer a {
             color: rgba(255, 255, 255, 0.7);
         }
+
         .site-footer a:hover {
             color: var(--light-text-color);
         }
+
         .footer-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 40px;
             padding-bottom: 40px;
         }
+
         .footer-nav ul li {
             margin-bottom: 10px;
         }
+
         .footer-bottom {
             border-top: 1px solid rgba(255, 255, 255, 0.1);
             padding: 20px 0;
             text-align: center;
             font-size: 0.9rem;
         }
+
         .footer-bottom .created-by {
             font-size: 0.8rem;
             margin-top: 8px;
             color: rgba(255, 255, 255, 0.5);
         }
+
         .footer-bottom .created-by a {
             color: rgba(255, 255, 255, 0.6);
             text-decoration: none;
         }
-         .footer-bottom .created-by a:hover {
+
+        .footer-bottom .created-by a:hover {
             color: var(--light-text-color);
         }
-        
+
+        /* Body scroll lock for mobile nav */
+        body.nav-open {
+            overflow: hidden;
+        }
+
+        /* Placeholder image styles */
+        .placeholder-image {
+            width: 100%;
+            height: 280px;
+            background: linear-gradient(135deg, var(--primary-color) 0%, #3d4f59 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: var(--light-text-color);
+            font-family: var(--font-heading);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .placeholder-image i {
+            font-size: 3rem;
+            margin-bottom: 15px;
+            color: var(--secondary-color);
+        }
+
+        .placeholder-image span {
+            font-size: 1.1rem;
+        }
+
         /* ---=== 12. Responsive Media Queries ===--- */
         @media (max-width: 768px) {
             .main-nav .nav-menu {
                 display: none;
                 flex-direction: column;
-                position: absolute;
-                top: 79px; /* Adjust based on header height */
+                position: fixed;
+                top: 0;
                 left: 0;
                 width: 100%;
-                background-color: var(--light-text-color);
-                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-                padding: 10px 0;
+                height: 100vh;
+                background-color: rgba(43, 58, 66, 0.98);
+                padding-top: 100px;
+                z-index: 999;
+                animation: fadeIn 0.3s ease;
             }
+
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                }
+
+                to {
+                    opacity: 1;
+                }
+            }
+
             .main-nav .nav-menu.is-active {
                 display: flex;
             }
+
             .main-nav .nav-menu li {
                 margin: 0;
                 width: 100%;
                 text-align: center;
             }
+
             .main-nav .nav-menu a {
                 display: block;
-                padding: 15px 20px;
-                border-bottom: 1px solid var(--light-bg-color);
+                padding: 18px 20px;
+                color: var(--light-text-color);
+                font-size: 1.1rem;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             }
+
+            .main-nav .nav-menu a:hover {
+                background-color: rgba(198, 160, 86, 0.2);
+                color: var(--secondary-color);
+            }
+
             .main-nav .nav-menu a::after {
                 display: none;
             }
+
             .nav-cta {
-                margin: 10px 20px;
+                margin: 20px 40px;
+                background-color: var(--secondary-color) !important;
             }
 
             .hamburger {
                 display: block;
+                z-index: 1001;
             }
 
             .footer-container {
@@ -658,14 +834,17 @@
         }
     </style>
 </head>
+
 <body>
 
     <header class="site-header">
         <div class="container header-container">
             <a href="#home" class="logo">BlackStone</a>
             <nav class="main-nav">
-                <button class="hamburger" id="hamburger-menu" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
-                    <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+                <button class="hamburger" id="hamburger-menu" aria-label="Toggle menu" aria-expanded="false"
+                    aria-controls="nav-menu">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
                 </button>
                 <ul class="nav-menu" id="nav-menu">
                     <li><a href="#home" class="active">Home</a></li>
@@ -689,18 +868,27 @@
                 <a href="#contact" class="cta-button">Get Your Free Quote</a>
             </div>
         </section>
-        
+
         <section id="about" class="section">
             <div class="container">
                 <div class="grid-layout">
                     <div class="grid-image">
-                        <img src="https://images.unsplash.com/photo-1581152399633-42f707f5978f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="A collection of construction tools representing craftsmanship.">
+                        <div class="placeholder-image" style="height: 400px;">
+                            <i class="fas fa-tools"></i>
+                            <span>Image Coming Soon</span>
+                        </div>
                     </div>
                     <div class="grid-text">
                         <h2>Your Vision, Our Expertise</h2>
-                        <p>Whether you are looking to update your kitchen, bathroom, or any other area of your home, we have the skills and expertise to make your vision a reality. At BlackStone Construction and Design, we pride ourselves on our attention to detail, our commitment to meeting deadlines, and our ability to stay within your budget.</p>
-                        <p>We understand that a home remodel can be a significant investment, which is why we strive to provide our clients with a stress-free experience from start to finish. We believe that communication and transparency are key to a successful project, and we keep our clients informed every step of the way.</p>
-                         <a href="#services" class="cta-button">See Our Services</a>
+                        <p>Whether you are looking to update your kitchen, bathroom, or any other area of your home, we
+                            have the skills and expertise to make your vision a reality. At BlackStone Construction and
+                            Design, we pride ourselves on our attention to detail, our commitment to meeting deadlines,
+                            and our ability to stay within your budget.</p>
+                        <p>We understand that a home remodel can be a significant investment, which is why we strive to
+                            provide our clients with a stress-free experience from start to finish. We believe that
+                            communication and transparency are key to a successful project, and we keep our clients
+                            informed every step of the way.</p>
+                        <a href="#services" class="cta-button">See Our Services</a>
                     </div>
                 </div>
             </div>
@@ -710,23 +898,27 @@
             <div class="container">
                 <div class="section-title">
                     <h2>Our Services</h2>
-                    <p>Specializing in a range of services to enhance your home, we deliver high-quality results on every project.</p>
+                    <p>Specializing in a range of services to enhance your home, we deliver high-quality results on
+                        every project.</p>
                 </div>
                 <div class="services-grid">
                     <div class="service-item">
                         <div class="service-icon"><i class="fas fa-bath"></i></div>
                         <h3>Bathroom Remodeling</h3>
-                        <p>From custom showers to complete overhauls, we create beautiful and functional bathrooms tailored to your style and needs.</p>
+                        <p>From custom showers to complete overhauls, we create beautiful and functional bathrooms
+                            tailored to your style and needs.</p>
                     </div>
                     <div class="service-item">
                         <div class="service-icon"><i class="fas fa-th-large"></i></div>
                         <h3>Kitchen Backsplashes</h3>
-                        <p>Elevate your kitchen's look with a professionally installed backsplash using ceramic, glass, or natural stone.</p>
+                        <p>Elevate your kitchen's look with a professionally installed backsplash using ceramic, glass,
+                            or natural stone.</p>
                     </div>
                     <div class="service-item">
                         <div class="service-icon"><i class="fas fa-ruler-combined"></i></div>
                         <h3>Tile & Flooring</h3>
-                        <p>Expert installation of floor tiles for any room. We tackle challenging projects with professionalism and patience.</p>
+                        <p>Expert installation of floor tiles for any room. We tackle challenging projects with
+                            professionalism and patience.</p>
                     </div>
                 </div>
             </div>
@@ -736,14 +928,17 @@
             <div class="container">
                 <div class="section-title">
                     <h2>Stunning Transformations</h2>
-                    <p>See the difference our work can make. The images will automatically alternate between before and after.</p>
+                    <p>See the difference our work can make. The images will automatically alternate between before and
+                        after.</p>
                 </div>
                 <div class="transformations-grid">
                     <!-- Project 1 -->
                     <div class="transformation-item">
                         <div class="transformation-image-container">
-                            <img src="before1.jpg" alt="Dated bathroom before remodel" class="transformation-image before-image">
-                            <img src="after1.jpg" alt="Modern bathroom with freestanding tub after remodel" class="transformation-image after-image">
+                            <img src="before1.jpg" alt="Dated bathroom before remodel"
+                                class="transformation-image before-image">
+                            <img src="after1.jpg" alt="Modern bathroom with freestanding tub after remodel"
+                                class="transformation-image after-image">
                             <div class="transformation-label before-label">Before</div>
                             <div class="transformation-label after-label">After</div>
                         </div>
@@ -752,8 +947,16 @@
                     <!-- Project 2 -->
                     <div class="transformation-item">
                         <div class="transformation-image-container">
-                            <img src="https://images.unsplash.com/photo-1574482858140-7d73b333796d?q=80&w=600" alt="Old kitchen before remodel" class="transformation-image before-image">
-                            <img src="https://images.unsplash.com/photo-1600585152225-3579fe9d7ae2?q=80&w=600" alt="Bright, modern kitchen after remodel" class="transformation-image after-image">
+                            <div class="transformation-image before-image placeholder-image"
+                                style="position: absolute; height: 100%;">
+                                <i class="fas fa-camera"></i>
+                                <span>Before - Coming Soon</span>
+                            </div>
+                            <div class="transformation-image after-image placeholder-image"
+                                style="position: absolute; height: 100%; opacity: 0;">
+                                <i class="fas fa-camera"></i>
+                                <span>After - Coming Soon</span>
+                            </div>
                             <div class="transformation-label before-label">Before</div>
                             <div class="transformation-label after-label">After</div>
                         </div>
@@ -767,61 +970,86 @@
             <div class="container">
                 <div class="section-title">
                     <h2 style="color:var(--light-text-color)">Project Gallery</h2>
-                    <p style="color:rgba(255,255,255,0.8)">A showcase of our commitment to quality and design excellence in the Charlotte area.</p>
+                    <p style="color:rgba(255,255,255,0.8)">A showcase of our commitment to quality and design excellence
+                        in the Charlotte area.</p>
                 </div>
 
                 <div class="portfolio-grid">
                     <div class="portfolio-item">
-                        <img src="image_00faf8.jpg" alt="Freestanding tub in a modern bathroom with a wood accent wall">
+                        <div class="placeholder-image">
+                            <i class="fas fa-camera"></i>
+                            <span>Image Coming Soon</span>
+                        </div>
                         <div class="portfolio-overlay">
                             <h3>Modern Soaking Tub</h3>
                             <p>A freestanding tub against a stunning wood slat accent wall.</p>
                         </div>
                     </div>
                     <div class="portfolio-item">
-                        <img src="https://images.unsplash.com/photo-1617806118233-14e1c9b3a5dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Geometric Tile Kitchen Backsplash">
+                        <div class="placeholder-image">
+                            <i class="fas fa-camera"></i>
+                            <span>Image Coming Soon</span>
+                        </div>
                         <div class="portfolio-overlay">
                             <h3>Artisan Tile Backsplash</h3>
                             <p>Unique geometric pattern for a vibrant, modern kitchen.</p>
                         </div>
                     </div>
-                    <div class="portfolio-item" >
-                        <img src="https://images.unsplash.com/photo-1628589139837-7734a3d4393a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="New floor tiling in a home">
+                    <div class="portfolio-item">
+                        <div class="placeholder-image">
+                            <i class="fas fa-camera"></i>
+                            <span>Image Coming Soon</span>
+                        </div>
                         <div class="portfolio-overlay">
                             <h3>New Floor Installation</h3>
                             <p>Beautiful and durable porcelain tile flooring.</p>
                         </div>
                     </div>
                     <div class="portfolio-item">
-                        <img src="https://images.unsplash.com/photo-1588692147170-0289382175a3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Classic subway tile kitchen backsplash">
+                        <div class="placeholder-image">
+                            <i class="fas fa-camera"></i>
+                            <span>Image Coming Soon</span>
+                        </div>
                         <div class="portfolio-overlay">
                             <h3>Classic Subway Tile</h3>
                             <p>A timeless white subway tile backsplash that brightens the kitchen.</p>
                         </div>
                     </div>
-                     <div class="portfolio-item">
-                        <img src="https://images.unsplash.com/photo-1596120236942-c43717514330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Custom walk-in shower tile">
+                    <div class="portfolio-item">
+                        <div class="placeholder-image">
+                            <i class="fas fa-camera"></i>
+                            <span>Image Coming Soon</span>
+                        </div>
                         <div class="portfolio-overlay">
                             <h3>Custom Shower Tiling</h3>
                             <p>Intricate tile work for a modern walk-in shower.</p>
                         </div>
                     </div>
                     <div class="portfolio-item">
-                        <img src="https://images.unsplash.com/photo-1621244342394-e65158841785?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Decorative floor tile pattern">
+                        <div class="placeholder-image">
+                            <i class="fas fa-camera"></i>
+                            <span>Image Coming Soon</span>
+                        </div>
                         <div class="portfolio-overlay">
                             <h3>Decorative Floor Tile</h3>
                             <p>Eye-catching patterned tile for a unique entryway.</p>
                         </div>
                     </div>
                     <div class="portfolio-item">
-                        <img src="https://images.unsplash.com/photo-1567409247094-13197f89c67e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Spa-like bathroom with natural stone">
+                        <div class="placeholder-image">
+                            <i class="fas fa-camera"></i>
+                            <span>Image Coming Soon</span>
+                        </div>
                         <div class="portfolio-overlay">
                             <h3>Spa-Inspired Retreat</h3>
                             <p>A serene bathroom featuring natural stone and wood accents.</p>
                         </div>
                     </div>
-                     <div class="portfolio-item">
-                        <img src="https://images.unsplash.com/photo-1604207914232-26615783577d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&q=80" alt="Marble slab kitchen backsplash">
+                    <div class="portfolio-item">
+                        <div class="placeholder-image">
+                            <i class="fas fa-camera"></i>
+                            <span>Image Coming Soon</span>
+                        </div>
                         <div class="portfolio-overlay">
                             <h3>Elegant Marble Backsplash</h3>
                             <p>A luxurious full-height marble slab backsplash.</p>
@@ -833,10 +1061,11 @@
 
         <section id="reviews" class="section bg-light">
             <div class="container text-center">
-                 <div class="section-title">
+                <div class="section-title">
                     <h2>Hear From Our Happy Clients</h2>
                     <p class="rating-summary">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
                         Excellent 4.9 Stars based on 74+ Reviews
                     </p>
                 </div>
@@ -846,112 +1075,166 @@
                         <ul class="glide__slides">
                             <li class="glide__slide">
                                 <div class="review-card">
-                                    <p class="review-text">"Did an amazing job installing the backsplash in our kitchen... high attention to detail at a great cost. It looks awesome - would highly recommend!"</p>
+                                    <p class="review-text">"Did an amazing job installing the backsplash in our
+                                        kitchen... high attention to detail at a great cost. It looks awesome - would
+                                        highly recommend!"</p>
                                     <div class="review-author">- Bonnie N.</div>
-                                    <div class="review-source"><a href="https://www.thumbtack.com/nc/charlotte/movers/blackstone-construction-design-llc/service/328910135254835211" target="_blank"><i class="fa-solid fa-thumbtack"></i> Thumbtack</a></div>
+                                    <div class="review-source"><a
+                                            href="https://www.thumbtack.com/nc/charlotte/movers/blackstone-construction-design-llc/service/328910135254835211"
+                                            target="_blank"><i class="fa-solid fa-thumbtack"></i> Thumbtack</a></div>
                                 </div>
                             </li>
                             <li class="glide__slide">
                                 <div class="review-card">
-                                    <p class="review-text">"Roman knocked it out of the park with my bathroom floors! It was a bit of a challenge... but he tackled all of the speed bumps with professionalism and patience."</p>
-                                     <div class="review-author">- Claire O.</div>
-                                     <div class="review-source"><a href="https://www.google.com/maps/place/BlackStone+Construction+and+Design+LLC/data=!4m2!3m1!1s0x0:0x16255bca0d59cdf6" target="_blank"><i class="fab fa-google"></i> Google</a></div>
+                                    <p class="review-text">"Roman knocked it out of the park with my bathroom floors! It
+                                        was a bit of a challenge... but he tackled all of the speed bumps with
+                                        professionalism and patience."</p>
+                                    <div class="review-author">- Claire O.</div>
+                                    <div class="review-source"><a
+                                            href="https://www.google.com/maps/place/BlackStone+Construction+and+Design+LLC/data=!4m2!3m1!1s0x0:0x16255bca0d59cdf6"
+                                            target="_blank"><i class="fab fa-google"></i> Google</a></div>
                                 </div>
                             </li>
                             <li class="glide__slide">
                                 <div class="review-card">
-                                    <p class="review-text">"Absolutely in love with my new floors. I was very happy with the results and with the professionals. 10/10 recommend."</p>
+                                    <p class="review-text">"Absolutely in love with my new floors. I was very happy with
+                                        the results and with the professionals. 10/10 recommend."</p>
                                     <div class="review-author">- Bianca S.</div>
-                                    <div class="review-source"><a href="https://www.google.com/maps/place/BlackStone+Construction+and+Design+LLC/data=!4m2!3m1!1s0x0:0x16255bca0d59cdf6" target="_blank"><i class="fab fa-google"></i> Google</a></div>
+                                    <div class="review-source"><a
+                                            href="https://www.google.com/maps/place/BlackStone+Construction+and+Design+LLC/data=!4m2!3m1!1s0x0:0x16255bca0d59cdf6"
+                                            target="_blank"><i class="fab fa-google"></i> Google</a></div>
                                 </div>
                             </li>
                             <li class="glide__slide">
                                 <div class="review-card">
-                                    <p class="review-text">"Slav and his team were top-notch... got the job done well and quickly and left no trace they were even ever there except a beautiful new bathroom!"</p>
+                                    <p class="review-text">"Slav and his team were top-notch... got the job done well
+                                        and quickly and left no trace they were even ever there except a beautiful new
+                                        bathroom!"</p>
                                     <div class="review-author">- Greta J.</div>
-                                    <div class="review-source"><a href="https://www.thumbtack.com/nc/charlotte/movers/blackstone-construction-design-llc/service/328910135254835211" target="_blank"><i class="fa-solid fa-thumbtack"></i> Thumbtack</a></div>
+                                    <div class="review-source"><a
+                                            href="https://www.thumbtack.com/nc/charlotte/movers/blackstone-construction-design-llc/service/328910135254835211"
+                                            target="_blank"><i class="fa-solid fa-thumbtack"></i> Thumbtack</a></div>
                                 </div>
                             </li>
-                             <li class="glide__slide">
+                            <li class="glide__slide">
                                 <div class="review-card">
-                                    <p class="review-text">"We started a bathroom DIY project and realized we were in over our heads. Roman was able to work with what we had done and he did an excellent job!"</p>
+                                    <p class="review-text">"We started a bathroom DIY project and realized we were in
+                                        over our heads. Roman was able to work with what we had done and he did an
+                                        excellent job!"</p>
                                     <div class="review-author">- Emily M.</div>
-                                    <div class="review-source"><a href="https://www.thumbtack.com/nc/charlotte/movers/blackstone-construction-design-llc/service/328910135254835211" target="_blank"><i class="fa-solid fa-thumbtack"></i> Thumbtack</a></div>
+                                    <div class="review-source"><a
+                                            href="https://www.thumbtack.com/nc/charlotte/movers/blackstone-construction-design-llc/service/328910135254835211"
+                                            target="_blank"><i class="fa-solid fa-thumbtack"></i> Thumbtack</a></div>
                                 </div>
                             </li>
                             <li class="glide__slide">
                                 <div class="review-card">
-                                    <p class="review-text">"Roman did an excellent job on our master bath remodel. He also tiled the floor, and it turned out beautifully. We plan to contact him for future projects!"</p>
+                                    <p class="review-text">"Roman did an excellent job on our master bath remodel. He
+                                        also tiled the floor, and it turned out beautifully. We plan to contact him for
+                                        future projects!"</p>
                                     <div class="review-author">- Kristina S.</div>
-                                    <div class="review-source"><a href="https://www.google.com/maps/place/BlackStone+Construction+and+Design+LLC/data=!4m2!3m1!1s0x0:0x16255bca0d59cdf6" target="_blank"><i class="fab fa-google"></i> Google</a></div>
+                                    <div class="review-source"><a
+                                            href="https://www.google.com/maps/place/BlackStone+Construction+and+Design+LLC/data=!4m2!3m1!1s0x0:0x16255bca0d59cdf6"
+                                            target="_blank"><i class="fab fa-google"></i> Google</a></div>
                                 </div>
                             </li>
-                             <li class="glide__slide">
+                            <li class="glide__slide">
                                 <div class="review-card">
-                                    <p class="review-text">"Blackstone Construction was awesome to work with. They quickly answered any questions I had... Overall we're very pleased with the outcome!"</p>
+                                    <p class="review-text">"Blackstone Construction was awesome to work with. They
+                                        quickly answered any questions I had... Overall we're very pleased with the
+                                        outcome!"</p>
                                     <div class="review-author">- Mrs. G.</div>
-                                    <div class="review-source"><a href="https://www.thumbtack.com/nc/charlotte/movers/blackstone-construction-design-llc/service/328910135254835211" target="_blank"><i class="fa-solid fa-thumbtack"></i> Thumbtack</a></div>
+                                    <div class="review-source"><a
+                                            href="https://www.thumbtack.com/nc/charlotte/movers/blackstone-construction-design-llc/service/328910135254835211"
+                                            target="_blank"><i class="fa-solid fa-thumbtack"></i> Thumbtack</a></div>
                                 </div>
                             </li>
                             <li class="glide__slide">
                                 <div class="review-card">
-                                    <p class="review-text">"The attention to detail on our bathroom remodel was incredible. From the initial quote to the final cleanup, the entire process was professional and transparent."</p>
+                                    <p class="review-text">"The attention to detail on our bathroom remodel was
+                                        incredible. From the initial quote to the final cleanup, the entire process was
+                                        professional and transparent."</p>
                                     <div class="review-author">- Mark P.</div>
-                                    <div class="review-source"><a href="https://www.google.com/maps/place/BlackStone+Construction+and+Design+LLC/data=!4m2!3m1!1s0x0:0x16255bca0d59cdf6" target="_blank"><i class="fab fa-google"></i> Google</a></div>
+                                    <div class="review-source"><a
+                                            href="https://www.google.com/maps/place/BlackStone+Construction+and+Design+LLC/data=!4m2!3m1!1s0x0:0x16255bca0d59cdf6"
+                                            target="_blank"><i class="fab fa-google"></i> Google</a></div>
                                 </div>
                             </li>
                             <li class="glide__slide">
                                 <div class="review-card">
-                                    <p class="review-text">"Hired them for a complex tile job on our fireplace surround. They were meticulous, and the result is a true centerpiece for our living room. Clean and efficient."</p>
+                                    <p class="review-text">"Hired them for a complex tile job on our fireplace surround.
+                                        They were meticulous, and the result is a true centerpiece for our living room.
+                                        Clean and efficient."</p>
                                     <div class="review-author">- Jessica L.</div>
-                                    <div class="review-source"><a href="https://www.thumbtack.com/nc/charlotte/movers/blackstone-construction-design-llc/service/328910135254835211" target="_blank"><i class="fa-solid fa-thumbtack"></i> Thumbtack</a></div>
+                                    <div class="review-source"><a
+                                            href="https://www.thumbtack.com/nc/charlotte/movers/blackstone-construction-design-llc/service/328910135254835211"
+                                            target="_blank"><i class="fa-solid fa-thumbtack"></i> Thumbtack</a></div>
                                 </div>
                             </li>
                             <li class="glide__slide">
                                 <div class="review-card">
-                                    <p class="review-text">"We had a list of handyman tasks that had been piling up. Blackstone came in and knocked everything out in a single day. Quality work and very reasonably priced."</p>
+                                    <p class="review-text">"We had a list of handyman tasks that had been piling up.
+                                        Blackstone came in and knocked everything out in a single day. Quality work and
+                                        very reasonably priced."</p>
                                     <div class="review-author">- David R.</div>
-                                    <div class="review-source"><a href="https://www.google.com/maps/place/BlackStone+Construction+and+Design+LLC/data=!4m2!3m1!1s0x0:0x16255bca0d59cdf6" target="_blank"><i class="fab fa-google"></i> Google</a></div>
+                                    <div class="review-source"><a
+                                            href="https://www.google.com/maps/place/BlackStone+Construction+and+Design+LLC/data=!4m2!3m1!1s0x0:0x16255bca0d59cdf6"
+                                            target="_blank"><i class="fab fa-google"></i> Google</a></div>
                                 </div>
                             </li>
                             <li class="glide__slide">
                                 <div class="review-card">
-                                    <p class="review-text">"They transformed our dark, dated kitchen with a new backsplash and under-cabinet lighting. It feels like a completely new space. Communication was excellent."</p>
+                                    <p class="review-text">"They transformed our dark, dated kitchen with a new
+                                        backsplash and under-cabinet lighting. It feels like a completely new space.
+                                        Communication was excellent."</p>
                                     <div class="review-author">- Sarah K.</div>
-                                    <div class="review-source"><a href="https://www.thumbtack.com/nc/charlotte/movers/blackstone-construction-design-llc/service/328910135254835211" target="_blank"><i class="fa-solid fa-thumbtack"></i> Thumbtack</a></div>
+                                    <div class="review-source"><a
+                                            href="https://www.thumbtack.com/nc/charlotte/movers/blackstone-construction-design-llc/service/328910135254835211"
+                                            target="_blank"><i class="fa-solid fa-thumbtack"></i> Thumbtack</a></div>
                                 </div>
                             </li>
                             <li class="glide__slide">
                                 <div class="review-card">
-                                    <p class="review-text">"We are very pleased and would definitely recommend him for tile work. The precision and care taken was obvious from the start. Very professional service."</p>
+                                    <p class="review-text">"We are very pleased and would definitely recommend him for
+                                        tile work. The precision and care taken was obvious from the start. Very
+                                        professional service."</p>
                                     <div class="review-author">- Darryl G.</div>
-                                    <div class="review-source"><a href="https://www.google.com/maps/place/BlackStone+Construction+and+Design+LLC/data=!4m2!3m1!1s0x0:0x16255bca0d59cdf6" target="_blank"><i class="fab fa-google"></i> Google</a></div>
+                                    <div class="review-source"><a
+                                            href="https://www.google.com/maps/place/BlackStone+Construction+and+Design+LLC/data=!4m2!3m1!1s0x0:0x16255bca0d59cdf6"
+                                            target="_blank"><i class="fab fa-google"></i> Google</a></div>
                                 </div>
                             </li>
                         </ul>
                     </div>
 
                     <div class="glide__arrows" data-glide-el="controls">
-                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-chevron-left"></i></button>
-                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-chevron-right"></i></button>
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
+                                class="fas fa-chevron-left"></i></button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+                                class="fas fa-chevron-right"></i></button>
                     </div>
 
                 </div>
 
-                <a href="https://www.google.com/maps/place/BlackStone+Construction+and+Design+LLC/data=!4m2!3m1!1s0x0:0x16255bca0d59cdf6?sa=X&ved=1t:2428&ictx=111" target="_blank" class="cta-button google-review-btn">
+                <a href="https://www.google.com/maps/place/BlackStone+Construction+and+Design+LLC/data=!4m2!3m1!1s0x0:0x16255bca0d59cdf6?sa=X&ved=1t:2428&ictx=111"
+                    target="_blank" class="cta-button google-review-btn">
                     <i class="fab fa-google"></i> Review Us on Google
                 </a>
             </div>
         </section>
 
         <section id="contact" class="section">
-             <div class="container">
+            <div class="container">
                 <div class="contact-cta-box">
                     <h2>Ready to Start Your Project?</h2>
                     <p>Contact us today for a free, no-obligation quote. We're ready to bring your vision to life.</p>
-                    <a href="mailto:quote@blackstoneconstructionllc.com" class="cta-button">Email for a Free Quote</a>
-                    <p style="margin-top: 20px;">Or send a direct email to:</p>
-                    <a href="mailto:quote@blackstoneconstructionllc.com" class="email-link">quote@blackstoneconstructionllc.com</a>
+                    <div style="margin-top: 25px;">
+                        <a href="tel:+14125836880" class="cta-button"
+                            style="margin-right: 15px; margin-bottom: 10px;"><i class="fas fa-phone"></i> (412)
+                            583-6880</a>
+                        <a href="mailto:quote@blackstoneclt.com" class="cta-button"><i class="fas fa-envelope"></i>
+                            quote@blackstoneclt.com</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -971,19 +1254,22 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="#transformations">Transformations</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
-                     <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
             <div class="footer-contact">
                 <h4>Contact Us</h4>
                 <p>Charlotte, NC</p>
-                <p><i class="fas fa-envelope"></i> <a href="mailto:quote@blackstoneconstructionllc.com">quote@blackstoneconstructionllc.com</a></p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+14125836880">(412) 583-6880</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:quote@blackstoneclt.com">quote@blackstoneclt.com</a>
+                </p>
             </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; <span id="current-year"></span> BlackStone Construction & Design LLC. All Rights Reserved.</p>
-            <p class="created-by">Website created by <a href="https://ost4p.com/" target="_blank" rel="noopener noreferrer">ost4p.com</a></p>
+            <p class="created-by">Website built by <a href="https://ost4p.com/website" target="_blank"
+                    rel="noopener noreferrer">OL Design Studio</a></p>
         </div>
     </footer>
 
@@ -991,16 +1277,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/glide.min.js"></script>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
 
             // --- Hamburger Menu Toggle ---
             const hamburgerMenu = document.getElementById('hamburger-menu');
             const navMenu = document.getElementById('nav-menu');
 
             if (hamburgerMenu && navMenu) {
-                hamburgerMenu.addEventListener('click', function() {
+                hamburgerMenu.addEventListener('click', function () {
                     navMenu.classList.toggle('is-active');
                     hamburgerMenu.classList.toggle('is-active');
+                    document.body.classList.toggle('nav-open');
                     const isExpanded = navMenu.classList.contains('is-active');
                     hamburgerMenu.setAttribute('aria-expanded', isExpanded);
                 });
@@ -1011,6 +1298,7 @@
                         if (navMenu.classList.contains('is-active')) {
                             navMenu.classList.remove('is-active');
                             hamburgerMenu.classList.remove('is-active');
+                            document.body.classList.remove('nav-open');
                             hamburgerMenu.setAttribute('aria-expanded', 'false');
                         }
                     });
@@ -1079,4 +1367,5 @@
         });
     </script>
 </body>
+
 </html>

@@ -1,0 +1,8 @@
+# Robots.txt for BlackStone Construction & Design LLC
+# https://blackstoneclt.com/
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://blackstoneclt.com/sitemap.xml
