@@ -765,6 +765,11 @@
             font-size: 1.1rem;
         }
 
+        /* Portfolio hidden items */
+        .portfolio-item.hidden {
+            display: none;
+        }
+
         /* ---=== 12. Responsive Media Queries ===--- */
         @media (max-width: 768px) {
             .main-nav .nav-menu {
@@ -945,16 +950,10 @@
                     <!-- Project 2 -->
                     <div class="transformation-item">
                         <div class="transformation-image-container">
-                            <div class="transformation-image before-image placeholder-image"
-                                style="position: absolute; height: 100%;">
-                                <i class="fas fa-camera"></i>
-                                <span>Before - Coming Soon</span>
-                            </div>
-                            <div class="transformation-image after-image placeholder-image"
-                                style="position: absolute; height: 100%; opacity: 0;">
-                                <i class="fas fa-camera"></i>
-                                <span>After - Coming Soon</span>
-                            </div>
+                            <img src="img/kitchen before.jpg" alt="Kitchen before remodel"
+                                class="transformation-image before-image">
+                            <img src="img/kitchen after charlotte.png" alt="Kitchen after remodel"
+                                class="transformation-image after-image">
                             <div class="transformation-label before-label">Before</div>
                             <div class="transformation-label after-label">After</div>
                         </div>
@@ -972,87 +971,139 @@
                         in the Charlotte area.</p>
                 </div>
 
-                <div class="portfolio-grid">
-                    <div class="portfolio-item">
-                        <div class="placeholder-image">
-                            <i class="fas fa-camera"></i>
-                            <span>Image Coming Soon</span>
-                        </div>
+                <div class="portfolio-grid" id="portfolio-grid">
+                    <!-- Initial 6 visible items -->
+                    <div class="portfolio-item" data-index="0">
+                        <img src="img/best bathroom after charlotte.jpg" alt="Best Bathroom After Charlotte">
                         <div class="portfolio-overlay">
-                            <h3>Modern Soaking Tub</h3>
-                            <p>A freestanding tub against a stunning wood slat accent wall.</p>
+                            <h3>Best Bathroom Charlotte</h3>
                         </div>
                     </div>
-                    <div class="portfolio-item">
-                        <div class="placeholder-image">
-                            <i class="fas fa-camera"></i>
-                            <span>Image Coming Soon</span>
-                        </div>
+                    <div class="portfolio-item" data-index="1">
+                        <img src="img/ostap after remodel.jpg" alt="Beige Bathroom After">
                         <div class="portfolio-overlay">
-                            <h3>Artisan Tile Backsplash</h3>
-                            <p>Unique geometric pattern for a vibrant, modern kitchen.</p>
+                            <h3>Beige Bathroom After</h3>
                         </div>
                     </div>
-                    <div class="portfolio-item">
-                        <div class="placeholder-image">
-                            <i class="fas fa-camera"></i>
-                            <span>Image Coming Soon</span>
-                        </div>
+                    <div class="portfolio-item" data-index="2">
+                        <img src="img/ostaps after shower.jpg" alt="Beige Bathroom Shower">
                         <div class="portfolio-overlay">
-                            <h3>New Floor Installation</h3>
-                            <p>Beautiful and durable porcelain tile flooring.</p>
+                            <h3>Beige Bathroom Shower</h3>
                         </div>
                     </div>
-                    <div class="portfolio-item">
-                        <div class="placeholder-image">
-                            <i class="fas fa-camera"></i>
-                            <span>Image Coming Soon</span>
-                        </div>
+                    <div class="portfolio-item" data-index="3">
+                        <img src="img/steam shower concord.jpg" alt="Steam Shower Concord">
                         <div class="portfolio-overlay">
-                            <h3>Classic Subway Tile</h3>
-                            <p>A timeless white subway tile backsplash that brightens the kitchen.</p>
+                            <h3>Steam Shower Concord</h3>
                         </div>
                     </div>
-                    <div class="portfolio-item">
-                        <div class="placeholder-image">
-                            <i class="fas fa-camera"></i>
-                            <span>Image Coming Soon</span>
-                        </div>
+                    <div class="portfolio-item" data-index="4">
+                        <img src="img/black shiplap bathroom.jpg" alt="Black Shiplap Bathroom">
                         <div class="portfolio-overlay">
-                            <h3>Custom Shower Tiling</h3>
-                            <p>Intricate tile work for a modern walk-in shower.</p>
+                            <h3>Black Shiplap Bathroom</h3>
                         </div>
                     </div>
-                    <div class="portfolio-item">
-                        <div class="placeholder-image">
-                            <i class="fas fa-camera"></i>
-                            <span>Image Coming Soon</span>
-                        </div>
+                    <div class="portfolio-item" data-index="5">
+                        <img src="img/white nd gold bathroom charlotte.jpg" alt="White and Gold Bathroom Charlotte">
                         <div class="portfolio-overlay">
-                            <h3>Decorative Floor Tile</h3>
-                            <p>Eye-catching patterned tile for a unique entryway.</p>
+                            <h3>White and Gold Bathroom Charlotte</h3>
                         </div>
                     </div>
-                    <div class="portfolio-item">
-                        <div class="placeholder-image">
-                            <i class="fas fa-camera"></i>
-                            <span>Image Coming Soon</span>
-                        </div>
+                    <!-- Hidden items (loaded on demand) -->
+                    <div class="portfolio-item hidden" data-index="6">
+                        <img src="img/2x4 shower huntersville.jpg" alt="2x4 Shower Huntersville">
                         <div class="portfolio-overlay">
-                            <h3>Spa-Inspired Retreat</h3>
-                            <p>A serene bathroom featuring natural stone and wood accents.</p>
+                            <h3>Shower Huntersville</h3>
                         </div>
                     </div>
-                    <div class="portfolio-item">
-                        <div class="placeholder-image">
-                            <i class="fas fa-camera"></i>
-                            <span>Image Coming Soon</span>
-                        </div>
+                    <div class="portfolio-item hidden" data-index="7">
+                        <img src="img/bathroom after.jpg" alt="Bathroom After">
                         <div class="portfolio-overlay">
-                            <h3>Elegant Marble Backsplash</h3>
-                            <p>A luxurious full-height marble slab backsplash.</p>
+                            <h3>Bathroom After</h3>
                         </div>
                     </div>
+                    <div class="portfolio-item hidden" data-index="8">
+                        <img src="img/bathroom remodel after.jpg" alt="Bathroom Remodel After">
+                        <div class="portfolio-overlay">
+                            <h3>Bathroom Remodel</h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item hidden" data-index="9">
+                        <img src="img/bathtub after.jpg" alt="Bathtub After">
+                        <div class="portfolio-overlay">
+                            <h3>Bathtub After</h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item hidden" data-index="10">
+                        <img src="img/bathtub surround after.jpg" alt="Bathtub Surround After">
+                        <div class="portfolio-overlay">
+                            <h3>Bathtub Surround</h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item hidden" data-index="11">
+                        <img src="img/best bath after 1.jpg" alt="Best Bath After">
+                        <div class="portfolio-overlay">
+                            <h3>Best Bath</h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item hidden" data-index="12">
+                        <img src="img/best bathroom after 11.jpg" alt="Best Bathroom After">
+                        <div class="portfolio-overlay">
+                            <h3>Best Bathroom</h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item hidden" data-index="13">
+                        <img src="img/gray subway remodel charlotte.png" alt="Gray Subway Remodel Charlotte">
+                        <div class="portfolio-overlay">
+                            <h3>Gray Subway Remodel Charlotte</h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item hidden" data-index="14">
+                        <img src="img/kitchen after charlotte.png" alt="Kitchen After Charlotte">
+                        <div class="portfolio-overlay">
+                            <h3>Kitchen Charlotte</h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item hidden" data-index="15">
+                        <img src="img/shower remodel.jpg" alt="Shower Remodel">
+                        <div class="portfolio-overlay">
+                            <h3>Shower Remodel</h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item hidden" data-index="18">
+                        <img src="img/steam shower bathroom.jpg" alt="Steam Shower Bathroom">
+                        <div class="portfolio-overlay">
+                            <h3>Steam Shower Bathroom</h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item hidden" data-index="19">
+                        <img src="img/steam shower remodel.jpg" alt="Steam Shower Remodel">
+                        <div class="portfolio-overlay">
+                            <h3>Steam Shower Remodel</h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item hidden" data-index="20">
+                        <img src="img/subway and pattern floor.webp" alt="Subway and Pattern Floor">
+                        <div class="portfolio-overlay">
+                            <h3>Subway and Pattern Floor</h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item hidden" data-index="21">
+                        <img src="img/tall shower remodel charlotte.jpg" alt="Tall Shower Remodel Charlotte">
+                        <div class="portfolio-overlay">
+                            <h3>Tall Shower Remodel Charlotte</h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-item hidden" data-index="22">
+                        <img src="img/white bathroom.jpg" alt="White Bathroom">
+                        <div class="portfolio-overlay">
+                            <h3>White Bathroom</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center" style="margin-top: 40px;">
+                    <button id="load-more-btn" class="cta-button">Load More</button>
                 </div>
             </div>
         </section>
@@ -1360,6 +1411,32 @@
                         item.classList.toggle('is-showing-after');
                     }, 5000); // Switch every 5 seconds
                 });
+            }
+
+            // --- Portfolio Load More ---
+            const loadMoreBtn = document.getElementById('load-more-btn');
+            const portfolioItems = document.querySelectorAll('.portfolio-item.hidden');
+            let currentlyShown = 0;
+            const itemsPerLoad = 6;
+
+            if (loadMoreBtn && portfolioItems.length > 0) {
+                loadMoreBtn.addEventListener('click', function () {
+                    const hiddenItems = document.querySelectorAll('.portfolio-item.hidden');
+                    let count = 0;
+                    hiddenItems.forEach(item => {
+                        if (count < itemsPerLoad) {
+                            item.classList.remove('hidden');
+                            count++;
+                        }
+                    });
+                    // Hide button if no more items
+                    if (document.querySelectorAll('.portfolio-item.hidden').length === 0) {
+                        loadMoreBtn.style.display = 'none';
+                    }
+                });
+            } else if (loadMoreBtn && portfolioItems.length === 0) {
+                // Hide button if no hidden items initially
+                loadMoreBtn.style.display = 'none';
             }
 
         });
