@@ -227,6 +227,18 @@
             width: 100%;
         }
 
+        .mobile-phone-icon {
+            display: none;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            padding: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .mobile-phone-icon:hover {
+            color: var(--secondary-color);
+        }
+
         .header-container {
             display: flex;
             justify-content: space-between;
@@ -329,7 +341,7 @@
 
         /* ---=== 4. Hero Section ===--- */
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/best bathroom after 1.jpg') no-repeat center center/cover;
+            background: url('img/header.jpg') no-repeat center center/cover;
             color: var(--light-text-color);
             padding: clamp(100px, 15vw, 200px) 0;
             text-align: center;
@@ -772,6 +784,22 @@
 
         /* ---=== 12. Responsive Media Queries ===--- */
         @media (max-width: 768px) {
+            .mobile-phone-icon {
+                display: block;
+            }
+
+            /* Center the logo on mobile */
+            .logo {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .header-container {
+                position: relative;
+                justify-content: space-between;
+            }
+
             .main-nav .nav-menu {
                 display: none;
                 flex-direction: column;
@@ -844,7 +872,13 @@
 
     <header class="site-header">
         <div class="container header-container">
-            <a href="#home" class="logo">BlackStone</a>
+            <a href="tel:+14125836880" class="mobile-phone-icon" aria-label="Call Us">
+                <i class="fas fa-phone"></i>
+            </a>
+            <a href="#home" class="logo" style="display: flex; align-items: center; gap: 10px;">
+                <img src="img/smalllogo.png" alt="BlackStone Logo" style="height: 40px; width: auto;">
+                BlackStone
+            </a>
             <nav class="main-nav">
                 <button class="hamburger" id="hamburger-menu" aria-label="Toggle menu" aria-expanded="false"
                     aria-controls="nav-menu">
@@ -878,7 +912,7 @@
             <div class="container">
                 <div class="grid-layout">
                     <div class="grid-image">
-                        <img src="img/remodel bath and shower.jpg" alt="Beautifully remodeled bathroom and shower"
+                        <img src="img/13.remodel bath and shower.jpg" alt="Beautifully remodeled bathroom and shower"
                             style="height: 400px; width: 100%; object-fit: cover; border-radius: var(--border-radius); box-shadow: var(--box-shadow);">
                     </div>
                     <div class="grid-text">
@@ -950,9 +984,9 @@
                     <!-- Project 2 -->
                     <div class="transformation-item">
                         <div class="transformation-image-container">
-                            <img src="img/kitchen before.jpg" alt="Kitchen before remodel"
+                            <img src="kitchenbefore.jpg" alt="Kitchen before remodel"
                                 class="transformation-image before-image">
-                            <img src="img/kitchen after charlotte.png" alt="Kitchen after remodel"
+                            <img src="kitchenafter.png" alt="Kitchen after remodel"
                                 class="transformation-image after-image">
                             <div class="transformation-label before-label">Before</div>
                             <div class="transformation-label after-label">After</div>
@@ -974,130 +1008,112 @@
                 <div class="portfolio-grid" id="portfolio-grid">
                     <!-- Initial 6 visible items -->
                     <div class="portfolio-item" data-index="0">
-                        <img src="img/best bathroom after charlotte.jpg" alt="Best Bathroom After Charlotte">
+                        <img src="img/0.Large format tile.jpg" alt="Large format tile">
                         <div class="portfolio-overlay">
-                            <h3>Best Bathroom Charlotte</h3>
+                            <h3>Large format tile</h3>
                         </div>
                     </div>
                     <div class="portfolio-item" data-index="1">
-                        <img src="img/ostap after remodel.jpg" alt="Beige Bathroom After">
+                        <img src="img/1.Elegant Tile Shower.jpg" alt="Elegant Tile Shower">
                         <div class="portfolio-overlay">
-                            <h3>Beige Bathroom After</h3>
+                            <h3>Elegant Tile Shower</h3>
                         </div>
                     </div>
                     <div class="portfolio-item" data-index="2">
-                        <img src="img/ostaps after shower.jpg" alt="Beige Bathroom Shower">
+                        <img src="img/2.Luxury Spa Bathroom.jpg" alt="Luxury Spa Bathroom">
                         <div class="portfolio-overlay">
-                            <h3>Beige Bathroom Shower</h3>
+                            <h3>Luxury Spa Bathroom</h3>
                         </div>
                     </div>
                     <div class="portfolio-item" data-index="3">
-                        <img src="img/steam shower concord.jpg" alt="Steam Shower Concord">
+                        <img src="img/3.Custom niche.jpg" alt="Custom niche">
                         <div class="portfolio-overlay">
-                            <h3>Steam Shower Concord</h3>
+                            <h3>Custom niche</h3>
                         </div>
                     </div>
                     <div class="portfolio-item" data-index="4">
-                        <img src="img/black shiplap bathroom.jpg" alt="Black Shiplap Bathroom">
+                        <img src="img/4.Floating Vanity.jpg" alt="Floating Vanity">
                         <div class="portfolio-overlay">
-                            <h3>Black Shiplap Bathroom</h3>
+                            <h3>Floating Vanity</h3>
                         </div>
                     </div>
                     <div class="portfolio-item" data-index="5">
-                        <img src="img/white nd gold bathroom charlotte.jpg" alt="White and Gold Bathroom Charlotte">
+                        <img src="img/5.Clean Tile Work.jpg" alt="Clean Tile Work">
                         <div class="portfolio-overlay">
-                            <h3>White and Gold Bathroom Charlotte</h3>
+                            <h3>Clean Tile Work</h3>
                         </div>
                     </div>
                     <!-- Hidden items (loaded on demand) -->
                     <div class="portfolio-item hidden" data-index="6">
-                        <img src="img/2x4 shower huntersville.jpg" alt="2x4 Shower Huntersville">
+                        <img src="img/6.Elegant details.jpg" alt="Elegant details">
                         <div class="portfolio-overlay">
-                            <h3>Shower Huntersville</h3>
+                            <h3>Elegant details</h3>
                         </div>
                     </div>
                     <div class="portfolio-item hidden" data-index="7">
-                        <img src="img/bathroom after.jpg" alt="Bathroom After">
+                        <img src="img/7.Sleek fixtures.jpg" alt="Sleek fixtures">
                         <div class="portfolio-overlay">
-                            <h3>Bathroom After</h3>
+                            <h3>Sleek fixtures</h3>
                         </div>
                     </div>
                     <div class="portfolio-item hidden" data-index="8">
-                        <img src="img/bathroom remodel after.jpg" alt="Bathroom Remodel After">
+                        <img src="img/8.Curbless Shower.jpg" alt="Curbless Shower">
                         <div class="portfolio-overlay">
-                            <h3>Bathroom Remodel</h3>
+                            <h3>Curbless Shower</h3>
                         </div>
                     </div>
                     <div class="portfolio-item hidden" data-index="9">
-                        <img src="img/bathtub after.jpg" alt="Bathtub After">
+                        <img src="img/9. Upscale Shower Remodel.jpg" alt="Upscale Shower Remodel">
                         <div class="portfolio-overlay">
-                            <h3>Bathtub After</h3>
+                            <h3>Upscale Shower Remodel</h3>
                         </div>
                     </div>
                     <div class="portfolio-item hidden" data-index="10">
-                        <img src="img/bathtub surround after.jpg" alt="Bathtub Surround After">
+                        <img src="img/10.steam shower remodel.jpg" alt="Steam shower remodel">
                         <div class="portfolio-overlay">
-                            <h3>Bathtub Surround</h3>
+                            <h3>Steam shower remodel</h3>
                         </div>
                     </div>
                     <div class="portfolio-item hidden" data-index="11">
-                        <img src="img/best bath after 1.jpg" alt="Best Bath After">
+                        <img src="img/11. Large porcelain tile.jpg" alt="Large porcelain tile">
                         <div class="portfolio-overlay">
-                            <h3>Best Bath</h3>
+                            <h3>Large porcelain tile</h3>
                         </div>
                     </div>
                     <div class="portfolio-item hidden" data-index="12">
-                        <img src="img/best bathroom after 11.jpg" alt="Best Bathroom After">
+                        <img src="img/12.Double vanity.jpg" alt="Double vanity">
                         <div class="portfolio-overlay">
-                            <h3>Best Bathroom</h3>
+                            <h3>Double vanity</h3>
                         </div>
                     </div>
                     <div class="portfolio-item hidden" data-index="13">
-                        <img src="img/gray subway remodel charlotte.png" alt="Gray Subway Remodel Charlotte">
+                        <img src="img/13.remodel bath and shower.jpg" alt="Remodel bath and shower">
                         <div class="portfolio-overlay">
-                            <h3>Gray Subway Remodel Charlotte</h3>
+                            <h3>Remodel bath and shower</h3>
                         </div>
                     </div>
                     <div class="portfolio-item hidden" data-index="14">
-                        <img src="img/kitchen after charlotte.png" alt="Kitchen After Charlotte">
+                        <img src="img/14.gray subway tile.png" alt="Gray subway tile">
                         <div class="portfolio-overlay">
-                            <h3>Kitchen Charlotte</h3>
+                            <h3>Gray subway tile</h3>
                         </div>
                     </div>
                     <div class="portfolio-item hidden" data-index="15">
-                        <img src="img/shower remodel.jpg" alt="Shower Remodel">
+                        <img src="img/15.outdoor kitchen.jpg" alt="Outdoor kitchen">
                         <div class="portfolio-overlay">
-                            <h3>Shower Remodel</h3>
+                            <h3>Outdoor kitchen</h3>
                         </div>
                     </div>
-                    <div class="portfolio-item hidden" data-index="18">
-                        <img src="img/steam shower bathroom.jpg" alt="Steam Shower Bathroom">
+                    <div class="portfolio-item hidden" data-index="16">
+                        <img src="img/16.steam shower.jpg" alt="Steam shower">
                         <div class="portfolio-overlay">
-                            <h3>Steam Shower Bathroom</h3>
+                            <h3>Steam shower</h3>
                         </div>
                     </div>
-                    <div class="portfolio-item hidden" data-index="19">
-                        <img src="img/steam shower remodel.jpg" alt="Steam Shower Remodel">
+                    <div class="portfolio-item hidden" data-index="17">
+                        <img src="img/17.Vanity Upgrade.webp" alt="Vanity Upgrade">
                         <div class="portfolio-overlay">
-                            <h3>Steam Shower Remodel</h3>
-                        </div>
-                    </div>
-                    <div class="portfolio-item hidden" data-index="20">
-                        <img src="img/subway and pattern floor.webp" alt="Subway and Pattern Floor">
-                        <div class="portfolio-overlay">
-                            <h3>Subway and Pattern Floor</h3>
-                        </div>
-                    </div>
-                    <div class="portfolio-item hidden" data-index="21">
-                        <img src="img/tall shower remodel charlotte.jpg" alt="Tall Shower Remodel Charlotte">
-                        <div class="portfolio-overlay">
-                            <h3>Tall Shower Remodel Charlotte</h3>
-                        </div>
-                    </div>
-                    <div class="portfolio-item hidden" data-index="22">
-                        <img src="img/white bathroom.jpg" alt="White Bathroom">
-                        <div class="portfolio-overlay">
-                            <h3>White Bathroom</h3>
+                            <h3>Vanity Upgrade</h3>
                         </div>
                     </div>
                 </div>
