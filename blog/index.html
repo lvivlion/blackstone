@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="BlackStone Construction blog - Expert advice on bathroom remodeling, kitchen backsplashes, outdoor living, and home improvement throughout Charlotte, NC.">
+    <title>Blog - Home Improvement Tips | BlackStone Construction & Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Open+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- SEO Meta Tags -->
+    <meta name="keywords"
+        content="home improvement blog Charlotte, bathroom remodeling tips, kitchen renovation advice, tile installation guide, shower remodel ideas, outdoor living Charlotte">
+    <meta name="author" content="BlackStone Construction and Design LLC">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://blackstoneclt.com/blog/">
+
+    <!-- Favicon and Theme -->
+    <link rel="icon" type="image/png" href="../img/smalllogo.png">
+    <meta name="theme-color" content="#2B3A42">
+
+    <style>
+        :root {
+            --primary-color: #2B3A42;
+            --secondary-color: #C6A056;
+            --text-color: #333333;
+            --light-text-color: #FFFFFF;
+            --light-bg-color: #F8F9FA;
+            --border-color: #DEE2E6;
+            --font-heading: 'Oswald', sans-serif;
+            --font-body: 'Open Sans', sans-serif;
+            --container-max-width: 1200px;
+            --border-radius: 5px;
+            --box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--light-text-color);
+        }
+
+        .container {
+            max-width: var(--container-max-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .site-header {
+            background-color: var(--light-text-color);
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        .back-link {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 700;
+            transition: color 0.3s ease;
+        }
+
+        .back-link:hover {
+            color: var(--primary-color);
+        }
+
+        .page-header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #3d4f59 100%);
+            color: var(--light-text-color);
+            padding: 80px 0 60px;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            font-family: var(--font-heading);
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
+        .page-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 40px;
+            padding: 80px 0;
+        }
+
+        .blog-card {
+            background-color: var(--light-text-color);
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        .blog-card-icon {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #3d4f59 100%);
+            color: var(--light-text-color);
+            padding: 40px;
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        .blog-card-content {
+            padding: 30px;
+        }
+
+        .blog-card-title {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            margin-bottom: 0.75rem;
+        }
+
+        .blog-card-title a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .blog-card-title a:hover {
+            color: var(--secondary-color);
+        }
+
+        .blog-card-location {
+            color: var(--secondary-color);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .blog-card-excerpt {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 1.25rem;
+        }
+
+        .blog-card-link {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            transition: gap 0.3s ease;
+        }
+
+        .blog-card-link:hover {
+            gap: 10px;
+        }
+
+        .site-footer {
+            background-color: var(--primary-color);
+            color: rgba(255, 255, 255, 0.7);
+            padding: 40px 0 20px;
+            text-align: center;
+        }
+
+        .site-footer a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+        }
+
+        .site-footer a:hover {
+            color: var(--light-text-color);
+        }
+
+        @media (max-width: 768px) {
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="../index.html" class="logo" style="display: flex; align-items: center; gap: 10px;">
+                <img src="../img/smalllogo.png" alt="BlackStone Logo" style="height: 40px; width: auto;">
+                BlackStone
+            </a>
+            <a href="../index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Home</a>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Home Improvement Insights</h1>
+            <p>Expert advice and local guides for Charlotte area homeowners</p>
+        </div>
+    </div>
+
+    <main>
+        <div class="container">
+            <div class="blog-grid">
+
+                <!-- Kitchen Backsplash Ballantyne -->
+                <article class="blog-card">
+                    <div class="blog-card-icon"><i class="fas fa-th"></i></div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-location"><i class="fas fa-map-marker-alt"></i> Ballantyne</div>
+                        <h2 class="blog-card-title"><a href="kitchen-backsplash-ballantyne.html">Kitchen Backsplash
+                                Installation</a></h2>
+                        <p class="blog-card-excerpt">Transform your Ballantyne kitchen with stunning tile backsplashes.
+                            Explore materials, patterns, and expert installation tips.</p>
+                        <a href="kitchen-backsplash-ballantyne.html" class="blog-card-link">Read More <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Luxury Bathroom Ballantyne -->
+                <article class="blog-card">
+                    <div class="blog-card-icon"><i class="fas fa-gem"></i></div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-location"><i class="fas fa-map-marker-alt"></i> Ballantyne</div>
+                        <h2 class="blog-card-title"><a href="luxury-bathroom-ballantyne.html">Luxury Bathroom
+                                Remodeling</a></h2>
+                        <p class="blog-card-excerpt">Create spa-like luxury in your Ballantyne master bath with premium
+                            fixtures, custom tile, and sophisticated design.</p>
+                        <a href="luxury-bathroom-ballantyne.html" class="blog-card-link">Read More <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Bathroom Remodel Lake Norman -->
+                <article class="blog-card">
+                    <div class="blog-card-icon"><i class="fas fa-bath"></i></div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-location"><i class="fas fa-map-marker-alt"></i> Lake Norman</div>
+                        <h2 class="blog-card-title"><a href="bathroom-remodel-lake-norman.html">Bathroom Remodeling</a>
+                        </h2>
+                        <p class="blog-card-excerpt">Complete bathroom renovation guide for Lake Norman homes. Modern
+                            designs, quality materials, expert craftsmanship.</p>
+                        <a href="bathroom-remodel-lake-norman.html" class="blog-card-link">Read More <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Custom Shower Lake Norman -->
+                <article class="blog-card">
+                    <div class="blog-card-icon"><i class="fas fa-shower"></i></div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-location"><i class="fas fa-map-marker-alt"></i> Lake Norman</div>
+                        <h2 class="blog-card-title"><a href="custom-shower-lake-norman.html">Custom Shower
+                                Installation</a></h2>
+                        <p class="blog-card-excerpt">Design your perfect custom tile shower with frameless glass,
+                            rainfall heads, and personalized features.</p>
+                        <a href="custom-shower-lake-norman.html" class="blog-card-link">Read More <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Outdoor Living Huntersville -->
+                <article class="blog-card">
+                    <div class="blog-card-icon"><i class="fas fa-tree"></i></div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-location"><i class="fas fa-map-marker-alt"></i> Huntersville</div>
+                        <h2 class="blog-card-title"><a href="outdoor-living-huntersville.html">Outdoor Living Spaces</a>
+                        </h2>
+                        <p class="blog-card-excerpt">Create beautiful outdoor kitchens, patios, and entertainment areas
+                            perfect for Huntersville's climate.</p>
+                        <a href="outdoor-living-huntersville.html" class="blog-card-link">Read More <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Steam Shower Huntersville -->
+                <article class="blog-card">
+                    <div class="blog-card-icon"><i class="fas fa-cloud"></i></div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-location"><i class="fas fa-map-marker-alt"></i> Huntersville</div>
+                        <h2 class="blog-card-title"><a href="steam-shower-huntersville.html">Steam Shower
+                                Installation</a></h2>
+                        <p class="blog-card-excerpt">Bring spa luxury home with custom steam showers. Health benefits,
+                            design options, and expert installation.</p>
+                        <a href="steam-shower-huntersville.html" class="blog-card-link">Read More <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Walk-in Shower Concord -->
+                <article class="blog-card">
+                    <div class="blog-card-icon"><i class="fas fa-door-open"></i></div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-location"><i class="fas fa-map-marker-alt"></i> Concord</div>
+                        <h2 class="blog-card-title"><a href="walk-in-shower-concord.html">Walk-In Shower Remodel</a>
+                        </h2>
+                        <p class="blog-card-excerpt">Accessible, elegant walk-in showers for Concord homes. Frameless
+                            glass, custom tile, modern features.</p>
+                        <a href="walk-in-shower-concord.html" class="blog-card-link">Read More <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Bathroom Tile Concord -->
+                <article class="blog-card">
+                    <div class="blog-card-icon"><i class="fas fa-th-large"></i></div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-location"><i class="fas fa-map-marker-alt"></i> Concord</div>
+                        <h2 class="blog-card-title"><a href="bathroom-tile-concord.html">Bathroom Tile Installation</a>
+                        </h2>
+                        <p class="blog-card-excerpt">Expert tile work for Concord bathrooms. Materials, patterns,
+                            waterproofing, and professional installation.</p>
+                        <a href="bathroom-tile-concord.html" class="blog-card-link">Read More <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Sauna Installation Matthews -->
+                <article class="blog-card">
+                    <div class="blog-card-icon"><i class="fas fa-fire"></i></div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-location"><i class="fas fa-map-marker-alt"></i> Matthews</div>
+                        <h2 class="blog-card-title"><a href="sauna-installation-matthews.html">Home Sauna
+                                Installation</a></h2>
+                        <p class="blog-card-excerpt">Add wellness luxury with traditional or infrared saunas. Health
+                            benefits and installation guide for Matthews homes.</p>
+                        <a href="sauna-installation-matthews.html" class="blog-card-link">Read More <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Master Bathroom Matthews -->
+                <article class="blog-card">
+                    <div class="blog-card-icon"><i class="fas fa-user-crown"></i></div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-location"><i class="fas fa-map-marker-alt"></i> Matthews</div>
+                        <h2 class="blog-card-title"><a href="master-bathroom-matthews.html">Master Bathroom
+                                Renovation</a></h2>
+                        <p class="blog-card-excerpt">Transform your Matthews master suite into a private spa retreat
+                            with luxury features and custom design.</p>
+                        <a href="master-bathroom-matthews.html" class="blog-card-link">Read More <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Tile Installation Charlotte -->
+                <article class="blog-card">
+                    <div class="blog-card-icon"><i class="fas fa-city"></i></div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-location"><i class="fas fa-map-marker-alt"></i> Charlotte Metro</div>
+                        <h2 class="blog-card-title"><a href="tile-installation-charlotte.html">Professional Tile
+                                Installation</a></h2>
+                        <p class="blog-card-excerpt">Comprehensive guide to tile installation throughout Charlotte.
+                            Materials, techniques, and expert craftsmanship.</p>
+                        <a href="tile-installation-charlotte.html" class="blog-card-link">Read More <i
+                                class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> BlackStone Construction & Design LLC. All Rights Reserved.</p>
+            <p style="margin-top: 10px;">
+                <a href="../index.html">Home</a> |
+                <a href="../index.html#services">Services</a> |
+                <a href="../index.html#contact">Contact</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>
